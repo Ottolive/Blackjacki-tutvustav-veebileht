@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjacki taktikad</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -24,12 +27,42 @@
             Sellega tutvumine annab sulle blackjacki mängimiseks kõik 
             vajalikud baasteadmised ja oskused. </p>
 
-        <p></p>
+        <p>Blackjacki põhistrateegia (Basic Strategy) on matemaatiliselt
+             välja töötatud juhiste kogum, mis aitab mängijal valida igas 
+             olukorras kõige soodsama käigu. Strateegia arvestab mängija 
+             kaartide punktisummat ning diileri avatud kaarti.</p>
+
+        <p>Selle asemel, et teha otsuseid juhuslikult, saab mängija
+             kasutada põhistrateegia tabelit, mis näitab, kas tuleks 
+             võtta lisakaart (Hit), jääda seisma (Stand), kahekordistada 
+             panust (Double Down) või jagada kaardid (Split).</p>
+
+        <h3>Kuidas tabelit lugeda?</h3>
+        <ul>
+            <li>Vasakul pool on mängija käe väärtus või kaartide kombinatsioon. Näiteks 16, A,6(äss ja kuus).</li>
+            <li>Ülareal on diileri avatud kaardi väärtus (2 kuni 10 ja A).</li>
+            <li>Tabelis olev täht, kus mängija käsi ja diileri kaart ristuvad, näitab, milline käik on matemaatiliselt kõige soodsam.</li>
+            <li>17+ tähendab käe väärtuseid 17-21, ässa väärtus saab olla 1 või 11.</li>
+        </ul>
+
+        <img src="img/pohistrateegiatbl.jpg" alt="Blackjacki põhistrateegia tabel" style="max-width: 100%; height: auto;">
+        
+        <h3>Mida tasub põhistrateegia kohta veel teada?</h3>
+
+        <p>Põhistrateegia tabel võib erineda sõltuvalt blackjacki mängu 
+            reeglitest. Näiteks mõjutavad tabeli soovitusi järgmised tingimused:</p>
+        
+        <ul>
+            <li>Pakkide arv: kas mängus kasutatakse ühte või mitut kaardipakki.</li>
+            <li>Diileri käitumine pehme 17 korral: kas diiler peab pehme 17 puhul lisakaardi võtma või seisma jääma.</li>
+            <li>Double Down reeglid: kas panust võib kahekordistada ainult teatud käte puhul või igal ajal.</li>
+        </ul>
         <button
-        onclick="ava1()">Teine starteegia</button>
-        <p id="s1" style="display: none;">
+        onclick="ava1()">Blackjacki strateegia edasijõudnutele</button>
+        <div id="s1" style="display: none;">
+            <p>Siia tuleb tekst...</p>
             
-        </p>
+        </div>
     </section>
     
     <nav>
@@ -40,5 +73,6 @@
         </ul>
     </nav>
 
+    <script src="js/strateegiad.js"></script>
 </body>
 </html>
