@@ -57,12 +57,37 @@
             <li>Diileri käitumine pehme 17 korral: kas diiler peab pehme 17 puhul lisakaardi võtma või seisma jääma.</li>
             <li>Double Down reeglid: kas panust võib kahekordistada ainult teatud käte puhul või igal ajal.</li>
         </ul>
+
+        <p>Kui põhistrateegia on selge, siis one veel põhistrateegiat täiendavad tehnikad:</p>
         <button
-        onclick="ava1()">Blackjacki strateegia edasijõudnutele</button>
+        onclick="ava1()">Kaartide lugemine</button>
         <div id="s1" style="display: none;">
-            <p>Siia tuleb tekst...</p>
+            <p>Kaartide lugemine(Card Counting) on üks tuntumaid blackjacki täiustatud 
+                tehnikaid. Selle eesmärk on jälgida, millised kaardid on 
+                juba mängus, ning hinnata selle põhjal allesjäänud 
+                kaardipaki koosseisu.</p>
             
+            <p>Selle tehnika aluseks on asjaolu, et kõrgete kaartide (10, J, Q, K ja A) 
+                ning madalate kaartide (2–6) osakaal allesjäänud kaardipakis mõjutab
+                 tõenäosusi, mis kaart järgmisena tuleb.</p>
+
+            <p>Mida rohkem on väikseid kaarte välja tulnud, seda suurem eelis on diileril ja majal. 
+                Mida rohkem on välja tulnud suuri kaarte, seda suurem on mängija eelis. 
+                Põhjuseks on see, et diiler peab saama kokku vähemalt 17 punkti.</p>    
         </div>
+
+        <button
+        onclick="ava2()">Kindlustuse analüüsimine</button>
+        <div id="s2" style="display: none;">
+            <p>Kindlustus(Insurance) on panus, mida mängija saab teha, kui diileri avatud kaart on äss. 
+                See panus kaitseb mängijat diileri blackjacki vastu. Kui diileril on blackjack, 
+                maksab kindlustus välja 2:1, kuid kui diileril pole blackjacki, kaotab mängija kindlustuse panuse.</p>
+            
+            <p>Kindlustus on üldiselt ebasoodne mängijale, kuna see suurendab maja eelist. 
+                Matemaatiliselt on kindlustus halb panus, kuna tõenäosus, et diileril on blackjack, 
+                ei ole piisavalt kõrge, et õigustada kindlustuse tegemist.</p>
+        </div>
+
     </section>
     
     <nav>
