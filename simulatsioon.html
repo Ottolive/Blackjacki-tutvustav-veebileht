@@ -10,23 +10,24 @@
 <body>
     <div class="simulatsioonikomponendid">
         <div class="header">
-            <a class="headeri-komponent1" href="index.html">←</a>
-            <p class="headeri-komponent2 raha">500$</p>
+            <a class="headeri-komponent1" href="tutvustus.html">←</a>
+            <h1 class="pealkiri">Simulatsioon</h1>
+            <p class="headeri-komponent2" id="raha">500$</p>
         </div>
-        <div class="diiler">
-            <img src="img/kaardid/artu_2.png">
-            <img src="img/kaardid/artu_2.png">
+        <p class="silt" id="diileriPunktid">Diiler</p>
+        <div class="diiler" id="diileriKaardid">
         </div>
-        <div class="mangija">
-            <img src="img/kaardid/artu_2.png">
-            <img src="img/kaardid/artu_2.png">
+        <p class="teade" id="teade">Vali panus!</p>
+        <div class="mangija" id="mangijaKaardid">
         </div>
-        <div class="nupud">
-            <button class="nupp" type="button">Hit</button>
-            <button class="nupp" type="button">Split</button>
-            <button class="nupp" type="button">Double</button>
-            <button class="nupp" type="button">Stand</button>
+        <p class="silt" id="mangijaPunktid">Sina</p>
+        <div class="nupud" id="nupud">
+            <button class="nupp" id="nupp1" type="button" onclick="nupp1()">10$</button>
+            <button class="nupp" id="nupp2" type="button" onclick="nupp2()">25$</button>
+            <button class="nupp" id="nupp3" type="button" onclick="nupp3()">50$</button>
+            <button class="nupp" id="nupp4" type="button" onclick="nupp4()">100$</button>
         </div>
     </div>
+    <script src="js/simulatsioon.js"></script>
 </body>
 </html>
